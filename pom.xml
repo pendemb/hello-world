@@ -14,6 +14,8 @@
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source> 
+    <maven.compiler.target>1.8</maven.compiler.target>       
   </properties>
 
   <modules>
@@ -163,11 +165,7 @@
   </build>
 
   <dependencyManagement>
-    <properties>
-     <maven.compiler.source>1.8</maven.compiler.source>
-     <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
-    <dependencies>
+      <dependencies>
       <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>servlet-api</artifactId>
